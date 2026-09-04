@@ -96,10 +96,9 @@ p {
     display: flex;
     justify-content: center;
 
-    font-family: "Parisienne", cursive;
+    font-family: "Antic Didone", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 150%;
 }
 
 a {

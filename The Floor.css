@@ -108,6 +108,7 @@ li {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 25px;
 
         position: absolute;
         top: 70px;
@@ -189,4 +190,24 @@ a:hover {
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media (max-width: 50em) {
+
+    .social-media {
+        justify-content: space-evenly;
+    }
+
+    .contact,
+    .pen,
+    .instagram {
+        height: 3em;
+        padding: 10px;
+    }
+
+    span {
+        font-size: 90%;
+    }
+
+
 }

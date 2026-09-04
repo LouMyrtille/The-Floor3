@@ -9,6 +9,12 @@
     padding: 0;
 }
 
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
 li {
     list-style: none;
 }
@@ -33,17 +39,90 @@ li {
 }
 
 .navbar {
+    position: relative;
+    height: 70px;
+    background-color: rgba(235, 223, 198, 0.854);
+    border-bottom: 3px double black;
+}
+
+.nav-list {
     height: 70px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgba(235, 223, 198, 0.854);
-    border-bottom: 3px double black;
 
     font-family: "Parisienne", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 150%;
+}
+
+.nav-list a {
+    text-decoration: none;
+}
+
+.button-hamburger {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: block;
+}
+
+.hamburger-close {
+    display: none;
+}
+
+.hamburger.hidden {
+    display: none;
+}
+
+.hamburger-close.hidden {
+    display: block;
+}
+
+@media (max-width: 50em) {
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-hamburger {
+        display: flex;
+        margin: auto;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-list.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: absolute;
+        top: 70px;
+        right: 0;
+
+        width: 100%;
+
+        height: auto;
+        padding: 2rem 0;
+
+        background-color: rgba(235, 223, 198, 0.95);
+
+        z-index: 5;
+    }
+
 }
 
 /* FOOTER */

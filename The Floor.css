@@ -9,6 +9,10 @@
     padding: 0;
 }
 
+body {
+    background-color: #F2EFE8;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
@@ -155,7 +159,7 @@ li {
     align-items: center;
 }
 
-span {
+.social-media span {
     font-family: "Parisienne",
         cursive;
     font-weight: 400;
@@ -173,8 +177,8 @@ span {
 
 p {
     padding: 20px;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 
     font-family: "Antic Didone", serif;
     font-weight: 400;
@@ -210,4 +214,120 @@ a:hover {
     }
 
 
+}
+
+/* Notes From The Floor */
+
+.articles {
+    background-color: #F2EFE8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+    padding: clamp(3rem, 6vw, 6rem) 2rem;
+}
+
+.articles img {
+    height: 20rem;
+    width: 20rem;
+}
+
+.articles>div {
+    min-width: 20rem;
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articles p {
+    text-align: center;
+    width: 20rem;
+}
+
+@media (max-width: 50em) {
+
+    .articles {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .articles>div {
+        min-width: 15rem;
+        max-width: 15rem;
+    }
+
+    .articles img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .articles p {
+        width: 15rem;
+    }
+}
+
+/* CSS for the articles */
+
+h1 {
+    padding: 1rem;
+}
+
+h2 {
+    width: 40rem;
+    padding: 1rem;
+
+    font-family: "Antic Didone", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.the-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(3rem, 6vw, 6rem) 2rem;
+}
+
+.the-article img {
+    height: 30rem;
+    width: 40rem;
+}
+
+figcaption {
+    padding-bottom: 2rem;
+    width: 40rem;
+}
+
+.the-article p {
+
+    line-height: 1.8;
+    text-align: left;
+
+}
+
+.the-article span {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+@media (max-width: 50em) {
+    .the-article img {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    figcaption {
+        padding-bottom: 2rem;
+        width: 15rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        width: 15rem;
+    }
 }

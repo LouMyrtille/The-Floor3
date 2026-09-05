@@ -311,7 +311,7 @@ figcaption {
 }
 
 .the-article span {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 @media (max-width: 50em) {
